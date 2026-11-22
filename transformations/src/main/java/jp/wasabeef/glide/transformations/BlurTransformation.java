@@ -22,7 +22,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Build;
 import android.renderscript.RSRuntimeException;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import java.security.MessageDigest;
 import jp.wasabeef.glide.transformations.internal.FastBlur;
@@ -99,3 +99,4 @@ public class BlurTransformation extends BitmapTransformation {
     messageDigest.update(ID_BYTES);
   }
 }
+

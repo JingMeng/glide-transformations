@@ -18,7 +18,7 @@ package jp.wasabeef.glide.transformations.gpu;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import java.security.MessageDigest;
 import jp.co.cyberagent.android.gpuimage.GPUImage;
@@ -67,3 +67,4 @@ public class GPUFilterTransformation extends BitmapTransformation {
     messageDigest.update(ID_BYTES);
   }
 }
+

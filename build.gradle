@@ -2,19 +2,27 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'com.novoda:bintray-release:0.8.0'
+        classpath 'com.android.tools.build:gradle:8.2.1'
     }
 }
 
 allprojects {
     repositories {
+        maven {
+            url rootProject.file('local-maven')
+            content { includeGroup 'jp.co.cyberagent.android.gpuimage' }
+        }
         google()
-        jcenter()
+        mavenCentral()
         mavenCentral()
     }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }

@@ -23,7 +23,7 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import java.security.MessageDigest;
 import jp.wasabeef.glide.transformations.internal.Utils;
@@ -85,3 +85,4 @@ public class MaskTransformation extends BitmapTransformation {
     messageDigest.update(ID_BYTES);
   }
 }
+
